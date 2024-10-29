@@ -5,6 +5,17 @@ function obtenerAreaRectangulo(alto, ancho) {
   // 2, 2 ---> 4
   // 0, 2 ---> 2
   // Tu código:
+  if (alto === 0 || ancho === 0){
+    if(alto === 0){
+      return ("como no es un rectangulo, la linea mide: " + ancho + " de ancho");
+    }
+    else{
+      return ("como no es un rectangulo, la linea mide: " + alto + " de alto");
+    }
+  }
+  else{
+    return alto * ancho;
+  }
 }
 
 module.exports = obtenerAreaRectangulo;

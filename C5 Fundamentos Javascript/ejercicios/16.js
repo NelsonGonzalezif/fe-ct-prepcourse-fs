@@ -6,6 +6,13 @@ function esImpar(num) {
   // 15 ---> true
   // 14 ---> false
   // Tu código:
+  let par = num % 2;
+  if (par === 0){
+    return false;
+  }
+  else{
+    return true;
+  }
 }
 
 module.exports = esImpar;

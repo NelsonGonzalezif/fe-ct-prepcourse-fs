@@ -6,6 +6,13 @@ function devolverString(string) {
   // "hola mundo" ---> "hola mundo" 
   // "SoyHenry" ---> "SoyHenry" 
   // Tu código:
+
+  if(typeof string !== "string"){
+    return "este valor no es string"
+  }
+  else{
+    return string;
+  }
 }
 
 module.exports = devolverString;
